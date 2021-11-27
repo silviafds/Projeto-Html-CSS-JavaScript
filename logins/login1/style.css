@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+:root {
+    --cor0: #35612C;
+    --cor1: #69B578;
+}
+
+body {
+    background-image: url("./imagens/girassol-fundo2.jpeg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    padding-top: 120px;
+}
+
+.fundo {
+    background-color: white;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    margin: auto;
+    border-radius: 3%;
+}
+
+.imagem {
+    position: absolute;
+    width: 45em;
+    height: 3em;
+    text-align: center;
+    margin-top: 0.9em;
+}
+
+.texto  {
+    font-family: 'Dancing Script', cursive;
+    font-size: 29px;
+    position: absolute;
+    text-align: center;
+    width: 25em;
+    height: 3em;
+    margin-top: 4.5em;
+}
+
+/*.Centerer{
+    display: inline-block;
+    height: 3em;
+    vertical-align: middle;
+}*/
+
+/*.Centered{
+    display: inline-block;
+    vertical-align: middle;
+}*/
+
+
+.formularioL {
+    width: 45em;
+    height: 5em;
+    display: flex;
+    margin-top: 185px;
+    border-radius: 3%;
+}
+
+.formularioS {
+    width: 45em;
+    height: 5em;
+    display: flex;
+    margin: auto;
+    border-radius: 3%;
+    padding-bottom: 0.9em;
+}
+
+.email {
+    display: block;
+    margin: 30px auto;  
+    text-align: center;
+    border-radius: 4%;
+    width: 18em;
+    height: 1.8em;
+}
+
+.senha {
+    display: block;
+    margin: 30px auto;  
+    text-align: center;
+    border-radius: 4%;
+    width: 18em;
+    height: 1.8em;;
+}
+
+.esqueci-senha {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    text-align: right;
+    width: 42em;
+    height: 4em;
+}
+
+.esqueci-senha > a {
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+.div-botao {
+    position: relative;
+    width: 45em;
+    height: 5em;
+    display: flex;
+    margin-top: 3em;
+    border-radius: 3%;
+}
+
+.botaoEntrar {
+    display: block;
+    margin: 1em auto;
+    border-radius: 4%;
+    width: 6em;
+    height: 1.9em;
+}
+
