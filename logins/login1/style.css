@@ -25,7 +25,9 @@ body {
 }
 
 .imgLogin {
-    padding-top: 5px;
+    padding-top: 1.5em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,19 +35,36 @@ body {
 }
 
 .nomeLogin {
+    padding-top: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
 
+.nomeLogin > h2 {
+    text-shadow: 2px 2px 5px rgb(34, 32, 32);
+}
+
 .formLogin {
+    display: inline-block;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 1.1em;
+    padding-top: 0.5em;
+}
 
+.emailLogin {
+    text-align: center;
+    background-color: aliceblue;
+    border-color: black;
+    border-radius: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .formSenha {
@@ -56,19 +75,71 @@ body {
     padding-top: 2em;
 }
 
+.senhaLogin {
+    text-align: center;
+    background-color: aliceblue;
+    border-color: black;
+    border-radius: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
 .forgetPass {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding-top: -10px;
+    padding-bottom: 0px;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
-.forgetPass  a {
+.forgetPass a {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(2, 54, 2);
     text-decoration: underline;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.NovaConta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -2em;
+    margin-bottom: 0em;
+}
+
+.NovaConta a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:link {
+    color: rgb(53, 3, 28);
+}
+
+a:visited { /*cor inicial*/
+    color: rgb(2, 54, 2);
+}
+
+a:hover { /* passa mouse por cima*/
+    color: red;
+  }
+  
+a:active { /*clica no link*/
+    color: blue;
 }
 
 .botao {
@@ -77,7 +148,22 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Dancing Script', cursive;
-    padding-top: 2em;
+    padding-top: 1em;
+}
+
+.botaoEntrar {
+    background-color: #8a8a5dc7;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    border-color: black;
+    border-radius: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
 }
 
 /********************* footer  **********************/
@@ -103,7 +189,8 @@ body {
 .email > h3 {
     font-size: 1em;
     margin-top: 0.3em;
-    margin-bottom: 0.2em;
+    margin-bottom: 0em;
+    padding: 1em;
 }
 
 .telefone {
@@ -115,7 +202,7 @@ body {
 }
 
 .telefone > h3 {
-    padding-top: 0.4em;
+    padding-top: 0.2em;
     padding-bottom: 0.01em;
     font-size: 1em;
     margin-bottom: 0.2em;
@@ -123,15 +210,10 @@ body {
 
 .telefone > h4 {
     font-size: 0.9em;
-    padding-top: 0.1em;
+    padding-top: 0.2em;
     padding-bottom: 0em;
     margin-top: 0.1em;
     margin-bottom: 0.2em;
-}
-
-.copy {
-    margin-top: 0em;
-    margin-bottom: 0em;
 }
 
 @media only screen and (max-width: 667px) {
@@ -144,6 +226,7 @@ body {
         justify-content: center;
         align-items: center;
     }
+
     .box {
         display: flex;
         flex-direction: column;
@@ -151,6 +234,14 @@ body {
         height: 30em;
         background: #fff;
         border-radius: 2em 2em 2em 2em;
+    }
+
+    .imgLogin {
+        padding-top: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /****************  footer  *****************/
@@ -182,10 +273,5 @@ body {
         margin-bottom: 0em;
     }
 
-    .copy {
-        margin-top: 0em;
-        margin-bottom: 0em;
-        padding-bottom: 0em;
-    }
 }
 
