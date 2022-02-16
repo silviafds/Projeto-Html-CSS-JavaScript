@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
-:root {
-    --cor0: #35612C;
-    --cor1: #69B578;
-}
-
 body {
-    /*background-color: #A0A083;*/
     font-family: 'Dancing Script', cursive;
     margin: 0px;
 }
