@@ -5,4 +5,4 @@
 
 ### Modelo:
 
-<img src="favicon/favicon.ico" width="720px" />
+<img src="LoginImg/LoginFloricultura.png" width="720px" />
