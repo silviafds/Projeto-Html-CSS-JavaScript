@@ -6,42 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo Login</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagens/favicon_io/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
 
-<div class="fundo">
+<div class="fundo"> <!-- div principal-->
 
-    <div class="imagem">
-        <img class="Centered" src="./imagens/login-150.png" alt="Login-png">
+    <div class="box"> <!-- guarda imagem e formulário-->
+
+        <div class="imgLogin"> <!-- imagem de login-->
+            <picture>
+                <source media="(max-width: 667px)" srcset="./imagens/login-100px.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="./imagens/login-120px.png" type="image/png">
+                <img src="./imagens/login-120px.png" alt="imagem flexive">
+            </picture> 
+        </div>
+
+        <div class="nomeLogin"> <!-- nome login-->
+            <h2>Login</h2>
+        </div>
+
+        <form> <!-- formulario-->
+            <div class="formLogin">
+                <input type="text" name="email" class="email" placeholder="Email">
+            </div>
+            
+            <label class="formSenha">
+                <input type="text" name="senha" class="senha" placeholder="Senha">
+            </label>
+  
+            <div class="forgetPass">
+                <h4> <a href="#"> Esqueci minha senha</a></h4>
+            </div>
+
+            <div class="botao">
+                <button type="submit" value="Submit" class="botaoEntrar">Entrar</button>
+            </div>
+
     </div>
-
-    <div class="texto">
-        <h3>Login</h3>
-    </div>
-
-    <form >
-        <div class="formularioL">
-            <input type="text" name="email" class="email" placeholder="Email">
-        </div>
-
-        <label class="formularioS">
-            <input type="text" name="senha" class="senha" placeholder="Senha">
-        </label>
-
-        <div class="esqueci-senha">
-            <h4> <a href="#"> Esqueci minha senha</a></h4>
-        </div>
-
-
-        <div class="div-botao">
-            <button type="submit" value="Submit" class="botaoEntrar">Entrar</button>
-        </div>
-    </form>
 
 </div>
 
+<footer>
+    <div class="padraoTell">
+
+        <div class="telefone">
+            <h3>Contatos</h3>
+            <h4>(xx) xxxxx-xxxx</h4>
+            <h4>(xx) xxxx-xxxx</h4>
+        </div>
+
+        <div class="email">
+            <h3>floriculta@flor.com</h3>
+        </div>
+        <div class="copy">
+            <p>&copy;</p>
+        </div>
+        
+    
+    </div>
+
+   
+</footer>
    
 
 </body>
