@@ -5,4 +5,4 @@
 
 ### Modelo:
 
-<img src="LoginImg/LoginFloricultura.png" width="720px" />
+<img src="LoginImg/LoginMinimalista.png" width="720px" />
