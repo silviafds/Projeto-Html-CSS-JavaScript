@@ -86,15 +86,6 @@ body {
     padding-top: 0.1em;
 }
 
-.imagem1 {
-    padding-top: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
 .imgBombom {
     width: 100%;
     height: auto;
@@ -103,26 +94,77 @@ body {
     padding-bottom: 0.9em;
 }
 
-.wrap {
+.bloco1-2 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.item1 {
-    width: 50%;
+.doce {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 0.9em; 
+    border-radius: 2em;
+}
+
+.cupcake {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 0.9em; 
+    border-radius: 2em;
+}
+
+/************************* segundo bloco *****************************/
+
+.bloco2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 6%;
+    background-color: rgb(95, 44, 44);
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
+}
+
+.imgMaracuja {
+    width: 100%;
     height: auto;
     object-fit: cover;
     object-position: bottom;
     padding-bottom: 0.9em;
 }
 
-.item2 {
-    width: 50%;
+.bloco2-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boloCookie {
+    width: 40%;
     height: auto;
     object-fit: cover;
     object-position: bottom;
-    padding-bottom: 0.9em;
+    padding-bottom: 0.9em; 
+    border-radius: 2em;
+}
+
+.boloFrutas {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 0.9em; 
+    border-radius: 2em;
 }
 
 @media screen and (max-width: 667px) {
@@ -166,7 +208,7 @@ body {
         background-color: #dfd4d5;
     }
 
-    /********************** primeiro bloco ***********************/
+    /************************** primeiro bloco *****************************/
     .bloco1 {
         display: flex;
         flex-direction: column;
@@ -178,6 +220,15 @@ body {
         background-color: var(--corBabyPink);
         padding-bottom: 0.1em;
         padding-top: 0.1em;
+    }
+
+    /*********************** palavras lorem ipsum ************************/
+    .bloco1-2 > h2 {
+        font-size: 0.7em;
+    }
+
+    .bloco2-2 > h2 {
+        font-size: 0.7em;
     }
 
 }
