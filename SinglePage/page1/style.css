@@ -12,16 +12,21 @@ body {
     --corSafatyYellow: #f1d302;
 }
 /**************************  menu ****************************/
+
 #menu ul {
-	padding-top:15px;
-    padding-bottom: 15px;
-	margin:10px;
+	padding-top:0.6em;
+    padding-bottom: 0.5em;
+    padding-right: 0em;
+    padding-left: 0em;
+	margin-top: auto;
 	background-color:#EDEDED;
 	list-style:none;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 4%;
 }
 
 #menu ul li { /*menu na horizontal*/
@@ -29,25 +34,27 @@ body {
 } 
 
 #menu ul li a {
-	padding: 4px 35px;
+	padding: 0.3em 3em;
 	display: inline-block;
 	/* visual do link */
 	background-color:#EDEDED;
 	color: #333;
 	text-decoration: none;
-	border-bottom:3px solid #EDEDED;
+	border-bottom: 0.7em solid #EDEDED;
 }
 
 #menu ul li a:hover {
 	background-color:#D6D6D6;
 	color: #6D6D6D;
-	border-bottom:3px solid #EA0000;
+	border-bottom:0.2em solid #EA0000;
 }
 
 /******************* quem somos *********************/
 .apresentacao > h2 {
-    width: 95vw;
-    height: 6vh;
+    width: 100%;
+    height: 6%;
+    padding-top:0.3em;
+    padding-bottom: 0.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,25 +79,72 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    width: 95vw;
-    height: 6vh;
+    width: 100%;
+    height: 6%;
     background-color: var(--corBabyPink);
-    padding-bottom: 15px;
-    padding-top: 5px;
+    padding-bottom: 0.1em;
+    padding-top: 0.1em;
 }
 
 .imagem1 {
-    padding-top: 15px;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 98vw;
+    width: 100%;
+}
+
+.imgBombom {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 0.9em;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.item1 {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 0.9em;
+}
+
+.item2 {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 0.9em;
 }
 
 @media screen and (max-width: 667px) {
+    /************ config menu **************/
+    #menu ul {
+        padding-top:0.5em;
+        padding-bottom: 0.5em;
+        padding-right: 0em;
+        padding-left: 0em;
+        margin-top: auto;
+        background-color:#EDEDED;
+        list-style:none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5%;
+    }
+
     #menu ul li a { /*config menu*/
-        padding: 4px 15px;
+        padding: 0.1em 1em;
         display: inline-block;
         /* visual do link */
         background-color:#EDEDED;
@@ -99,9 +153,31 @@ body {
         border-bottom:3px solid #EDEDED;
     }
 
-    .imagem1 {
-        background-image: url("./imagens/principais/bombomGrandeEditada-Cortadapx.jpg");
-        
+    /**************** quem somos *****************/
+    .apresentacao > h2 {
+        width: 100%;
+        height: 6%;
+        padding-top:0.2em;
+        padding-bottom: 0.1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #dfd4d5;
+    }
+
+    /********************** primeiro bloco ***********************/
+    .bloco1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        width: 100%;
+        height: 3%;
+        background-color: var(--corBabyPink);
+        padding-bottom: 0.1em;
+        padding-top: 0.1em;
     }
 
 }
