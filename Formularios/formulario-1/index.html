@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="arquivoJS.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="./logo&favicon/tecnologia-50px.png" alt="logo" class="logoImagem">
+    </div>
+
+    <div class="principal">
+        
+        <div class="apresentacao">
+            <h2>Formulário de cadastro</h2>
+        </div>
+
+        <div class="container1">
+            <form action="get" id="formulario">
+                <p>Nome completo</p> 
+                <input type="text" placeholder="Nome Completo" name="nomeUsuario" id="nomeUsuario" onblur="validaNomeCompleto()">
+                <p id="erroNome"></p>
+
+                <p>CPF</p>
+                <input type="text" placeholder="Digite apenas números" name="CPF" id="CPF" onblur="validaCPF()">
+                <p id="erroCPF"></p>
+
+                <p>Data de Nascimento</p>
+                <input type="date" placeholder="Digite a data" name="dataNascimento" id="dataNascimento" onblur="validaDataNasc()">
+                <p id="erroDtNascimento"></p>
+
+                <p>Selecione a Região de Nascimento</p>
+                <input type="text" placeholder="Selecione a Região que nasceu" name="regiaoNascimento" id="regiaoNascimento" list="opcoesRegiao" onblur="validaRegiaoNascimento()">
+                <datalist id="opcoesRegiao">
+                    <option value="Nordeste">NE</option>
+                    <option value="Norte">N</option>
+                    <option value="Sudeste">SE</option>
+                    <option value="Sul">S</option>
+                    <option value="Centro-Oeste">CO</option>
+                </datalist>
+                <p id="erroRegiaoNasc"></p>
+
+                <p>Telefone</p>
+                <input type="tel" name="telefone" id="telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder="(xx) xxxxx - xxxx" onblur="validaTelefone()">
+                <p id="erroTelefone"></p>
+
+
+                <button type="button" value="Input Button" id="botaoEnvioDados">Enviar</button>
+                
+            </form>  
+        </div>
+    </div>
+    
+
+</body>
+</html>
