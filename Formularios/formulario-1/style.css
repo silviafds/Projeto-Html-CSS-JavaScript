@@ -48,7 +48,7 @@ body {
 .container1 {
     background-color: #e4e5f1;
     width: 500px;
-    height: 100em;
+    height: auto;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -155,7 +155,7 @@ body {
 @media only screen and (min-width: 700px) {
     .container1 {
         width: 700px;
-        height: 700px;
+        height: 1000px;
         
     }
 }
