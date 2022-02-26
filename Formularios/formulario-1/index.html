@@ -48,8 +48,13 @@
                 <input type="tel" name="telefone" id="telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder="(xx) xxxxx - xxxx" onblur="validaTelefone()">
                 <p id="erroTelefone"></p>
 
+                <p>Email</p>
+                <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Digite seu email" onblur="validaEmail()">
+                <p id="erroEmail"></p>
 
-                <button type="button" value="Input Button" id="botaoEnvioDados">Enviar</button>
+
+                <button type="button" value="Input Button" id="botaoEnvioDados" onclick="validaDados()">Enviar</button>
+                <p id="confirmaDados"></p>
                 
             </form>  
         </div>

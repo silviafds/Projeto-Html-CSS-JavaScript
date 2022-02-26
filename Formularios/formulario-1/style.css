@@ -145,6 +145,26 @@ body {
     color: red;
 }
 
+#emailUsuario {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    width: 25em;
+    border-radius: 2em;
+    border: 0.3em solid  #c8cfda;
+}
+
+#emailUsuario::placeholder {
+    text-align: center;
+}
+
+#erroEmail {
+    color: red;
+}
+
+#confirmaDados {
+    color: green;
+}
+
 @media only screen and (max-width: 667px) {
     .container1 {
         width: 26em;
