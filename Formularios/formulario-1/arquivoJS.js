@@ -83,16 +83,43 @@ function validaDataNasc() {
 
 function validaRegiaoNascimento() {
     var recebeValidaRegiaoNasc = document.getElementById("regiaoNascimento").value;
-    
-    if(recebeValidaRegiaoNasc == "") {innerHTM
-        document.getElementById("regiaoNascimento").style.borderColor = "red";
-        document.getElementById("erroRegiaoNasc").innerHTML = "Selecione a Região"
-        return false;
+
+    var recebeResultadoNomeRegiao = validaNomeRegiao(recebeValidaRegiaoNasc);
+
+    if(recebeResultadoNomeRegiao == 1) {
+        var valorRegiaoNascimento = 1;
+        document.getElementById("regiaoNascimento").style.borderColor = "green";
+        document.getElementById("erroRegiaoNasc").innerHTML = ""
+        return true;
     }
-    var valorRegiaoNascimento = 1;
-    document.getElementById("regiaoNascimento").style.borderColor = "green";
-    document.getElementById("erroRegiaoNasc").innerHTML = ""
-    return true;
+    document.getElementById("regiaoNascimento").style.borderColor = "red";
+    document.getElementById("erroRegiaoNasc").innerHTML = "Informe uma região válida"
+    return false;
+   
+}
+
+function validaNomeRegiao(recebeValidaRegiaoNasc) {
+
+    switch(recebeValidaRegiaoNasc) {
+        case "norte":
+        case "Norte":
+        case "nordeste":
+        case "Nordeste":
+        case "suldeste":
+        case "Suldeste":
+        case "sul":
+        case "Sul":
+        case "centro-oeste":
+        case "centro oeste":
+        case "Centro-Oeste":
+        case "Centro Oeste":
+        case "Centro-oeste":
+        case "Centro oeste":                
+            return 1;
+        default:
+            return 0;
+    }
+
 }
 
 function validaTelefone() {
@@ -124,9 +151,9 @@ function validaEmail() {
 }
 
 function validaDados() {
-    var dadosPreenchidos = valorNomeCompleto + valorCPF + valorTelefone + valorEmail;
+    var dadosPreenchidos = valorNomeCompleto + valorCPF + valorDataNascimento + valorRegiaoNascimento + valorTelefone + valorEmail;
 
-    if(dadosPreenchidos == 4) {
+    if(dadosPreenchidos == 6) {
         /*alert("Dados preenchidos com sucesso.");*/
         document.getElementById("confirmaDados").innerHTML = "Dados preenchidos com sucesso.";
         return true;
