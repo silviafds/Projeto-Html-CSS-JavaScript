@@ -6,4 +6,6 @@
 
 ### Modelo:
 
+- Imagem de exemplo quando alguma informação esta errada.
+
 <img src="./ImageExibir/imagemTeste.png" width="720px" />
