@@ -54,24 +54,6 @@
         </div>
     </div>
     
-    <script>
-        function validaDados() {
-            var dadosPreenchidos = valorNomeCompleto + valorCPF + valorDataNascimento + valorRegiaoNascimento + valorTelefone + valorEmail;
-            var x = document.getElementById("botaoEnvioDados").value;
-            document.getElementById("confirmaDados").innerHTML = x;
-
-            if(dadosPreenchidos == 6) {
-                /*alert("Dados preenchidos com sucesso.");*/
-                document.getElementById("confirmaDados").innerHTML = "Dados preenchidos com sucesso.";
-                return true;
-            }
-            /*alert("Existem dados que não foram preenchidos com suceso. Por favor, preencha para finalizar cadastro.");*/
-            document.getElementById("confirmaDados").innerHTML = "Existem dados que não foram preenchidos com suceso. Por favor, preencha para finalizar cadastro.";
-            return false;
-
-    }
-
-    </script>
 
 </body>
 </html>
