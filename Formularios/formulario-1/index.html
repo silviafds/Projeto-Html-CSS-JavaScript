@@ -7,6 +7,7 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="arquivoJS.js"></script>
+    <link rel="shortcut icon" href="./logo&favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="logo">
@@ -46,13 +47,31 @@
                 <p id="erroEmail"></p>
 
 
-                <button type="button" value="Input Button" id="botaoEnvioDados" onclick="validaDados()">Enviar</button>
+                <button onclick="validaDados()" type="button" value="Input Button" id="botaoEnvioDados">Enviar</button>
                 <p id="confirmaDados"></p>
                 
             </form>  
         </div>
     </div>
     
+    <script>
+        function validaDados() {
+            var dadosPreenchidos = valorNomeCompleto + valorCPF + valorDataNascimento + valorRegiaoNascimento + valorTelefone + valorEmail;
+            var x = document.getElementById("botaoEnvioDados").value;
+            document.getElementById("confirmaDados").innerHTML = x;
+
+            if(dadosPreenchidos == 6) {
+                /*alert("Dados preenchidos com sucesso.");*/
+                document.getElementById("confirmaDados").innerHTML = "Dados preenchidos com sucesso.";
+                return true;
+            }
+            /*alert("Existem dados que não foram preenchidos com suceso. Por favor, preencha para finalizar cadastro.");*/
+            document.getElementById("confirmaDados").innerHTML = "Existem dados que não foram preenchidos com suceso. Por favor, preencha para finalizar cadastro.";
+            return false;
+
+    }
+
+    </script>
 
 </body>
 </html>
