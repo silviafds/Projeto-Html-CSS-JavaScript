@@ -9,3 +9,5 @@
   - Login1-Minimalista: projeto de login com um design voltado ao minimalismo.
 - Single Page: páginas únicas para as demais áreas.
   - Page1-Confeitaria: projeto de página home voltado para uma confeitaria, fazendo uso do minimalismo.
+- Formularios: alguns exemplos de formulários com JavaScript
+  - formulario-1: projeto de formulário que faz validação de dados pessoais.
