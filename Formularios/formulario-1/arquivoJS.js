@@ -1,3 +1,5 @@
+var valorNomeCompleto = 0, valorCPF = 0, valorDataNascimento = 0, valorRegiaoNascimento = 0, valorTelefone = 0, valorEmail = 0;
+
 function validaNomeCompleto() {
     var recebeNomeCompleto = document.getElementById("nomeUsuario").value;
 
@@ -6,7 +8,7 @@ function validaNomeCompleto() {
         document.getElementById("nomeUsuario").style.borderColor = "red";
         return false;
     }
-    var valorNomeCompleto = 1;
+    valorNomeCompleto = 1;
     document.getElementById("nomeUsuario").style.borderColor = "green";
     document.getElementById("erroNome").innerHTML = ""
     return true;
@@ -60,7 +62,7 @@ function validaCPF() {
         document.getElementById("erroCPF").innerHTML = "Informe um CPF válido"
         return false
     }
-    var valorCPF = 1;
+    valorCPF = 1;
     document.getElementById("CPF").style.borderColor = "green";
     document.getElementById("erroCPF").innerHTML = ""
     return true
@@ -75,7 +77,7 @@ function validaDataNasc() {
         document.getElementById("erroDtNascimento").innerHTML = "Informe a Data de Nascimento"
         return false;
     } 
-    var valorDataNascimento = 1;
+    valorDataNascimento = 1;
     document.getElementById("dataNascimento").style.borderColor = "green";
     document.getElementById("erroDtNascimento").innerHTML = ""
     return true;
@@ -87,7 +89,7 @@ function validaRegiaoNascimento() {
     var recebeResultadoNomeRegiao = validaNomeRegiao(recebeValidaRegiaoNasc);
 
     if(recebeResultadoNomeRegiao == 1) {
-        var valorRegiaoNascimento = 1;
+        valorRegiaoNascimento = 1;
         document.getElementById("regiaoNascimento").style.borderColor = "green";
         document.getElementById("erroRegiaoNasc").innerHTML = ""
         return true;
@@ -130,7 +132,7 @@ function validaTelefone() {
         document.getElementById("erroTelefone").innerHTML = "Digite o número de telefone";
         return false;
     }
-    var valorTelefone = 1;
+    valorTelefone = 1;
     document.getElementById("telefone").style.borderColor = "green";
     document.getElementById("erroTelefone").innerHTML = "";
     return true;
@@ -144,22 +146,28 @@ function validaEmail() {
         document.getElementById("erroEmail").innerHTML = "Digite um email válido";
         return false;
     }
-    var valorEmail = 1;
+    valorEmail = 1;
     document.getElementById("emailUsuario").style.borderColor = "green";
     document.getElementById("erroEmail").innerHTML = "";
     return true;
 }
 
+
 function validaDados() {
-    var dadosPreenchidos = valorNomeCompleto + valorCPF + valorDataNascimento + valorRegiaoNascimento + valorTelefone + valorEmail;
+   var dadosPreenchidos = valorNomeCompleto + valorCPF + valorDataNascimento + valorRegiaoNascimento + valorTelefone + valorEmail;
+    var x = document.getElementById("botaoEnvioDados").value;
+    document.getElementById("confirmaDados").innerHTML = x;
 
     if(dadosPreenchidos == 6) {
-        /*alert("Dados preenchidos com sucesso.");*/
+        alert("Dados preenchidos com sucesso.");
         document.getElementById("confirmaDados").innerHTML = "Dados preenchidos com sucesso.";
         return true;
     }
-    /*alert("Existem dados que não foram preenchidos com suceso. Por favor, preencha para finalizar cadastro.");*/
-    document.getElementById("confirmaDados").innerHTML = "Existem dados que não foram preenchidos com suceso. Por favor, preencha para finalizar cadastro.";
+    alert("Existem dados que não foram preenchidos com sucesso. Por favor, preencha para finalizar cadastro.");
+    document.getElementById("confirmaDados").style.color = "red";
+    document.getElementById("confirmaDados").innerHTML = "Existem dados que não foram preenchidos com sucesso. Por favor, preencha para finalizar cadastro."
     return false;
-    
+
 }
+
+
