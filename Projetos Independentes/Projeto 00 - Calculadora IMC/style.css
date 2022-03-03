@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, html{
+   
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    background-color: white;
+    text-align: center; 
+}
+
+.apresentacao {
+    width: 100%;
+    background-color: rgb(7, 138, 7);
+    height: 4em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 2em;
+}
+
+.principal {
+    /*background-color: #6065be;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    background-color: white;
+}
+
+.container1 {
+    background-color: rgba(123, 238, 100, 0.863);
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+    border: 0.1em solid black;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#paragrafo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+}
+
+#altura {
+    width: 22em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: rgb(212, 209, 209) solid 0.2em;
+}
+
+#peso {
+    width: 22em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: rgb(212, 209, 209) solid 0.2em;
+    margin-top: 3px;
+}
+
+#botaoEnviarDados {
+    width: 10em;
+    padding: 0.5em;
+    background-color: rgb(4, 160, 4);
+    border: black solid 0.2em;
+    border-radius: 0.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#resultado {
+    width: 22em;
+    padding: 3em;
+    margin-bottom: 10px;
+    border-radius: 2em;
+    border: rgb(7, 138, 7) solid 0.2em;
+}
