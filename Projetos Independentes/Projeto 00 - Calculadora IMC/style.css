@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0%;
@@ -60,6 +59,14 @@ body {
     border: #006494 solid 0.2em;
 }
 
+#erroAltura {
+    color: rgb(180, 6, 6);
+}
+
+#erroPeso {
+    color: rgb(180, 6, 6);
+}
+
 #peso {
     width: 22em;
     padding: 0.5em;
@@ -79,9 +86,18 @@ body {
 }
 
 #resultado {
-    width: 22em;
+    width: 20em;
     padding: 3em;
     margin-bottom: 10px;
     border-radius: 2em;
     border: #006494 solid 0.2em;
+    background-color: aliceblue;
+}
+
+#resultadoBom {
+    color: rgb(3, 100, 3);
+}
+
+#resultadoRuim {
+    color: rgb(165, 8, 8);
 }
