@@ -2,7 +2,7 @@
 # Calculadora de IMC
 
 ## O que é
-O projeto trata de uma calculadora de IMC.
+O projeto trata de uma calculadora de IMC. O ponto principal deste projeto é a prática com o JavaScript e não o design.
 
 ## Tecnologias utilizadas
 - HTML5 
