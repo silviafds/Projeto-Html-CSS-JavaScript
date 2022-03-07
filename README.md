@@ -3,6 +3,10 @@
 - Repositório com alguns projetos FrontEnd com HTML, CSS e JavaScript.
 - Serão criados diretórios com projetos individuais, desde páginas simples, logins, formulários, pequenos projetos independentes.
 
+## Execução
+
+- Clone o repositório e depois navegue pelo diretório desejado, após isso, execute o arquivo .html no browser ou IDE (ambiente de desenvolvimento) desejado.
+
 ## Diretórios:
 
 - Login: páginas de login.
