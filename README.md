@@ -17,4 +17,4 @@
   - formulario-1: projeto de formulário que faz validação de dados pessoais.
 - Projetos Independentes.
   - Projeto 00 - Calculadora IMC.
-
+  - Projeto 01 - Slides. Este projeto consiste em um grupos de slides desenvolvidos com algumas bibliotecas JavaScript.
