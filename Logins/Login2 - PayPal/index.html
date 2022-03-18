@@ -7,6 +7,7 @@
     <title>Login PayPal</title>
     <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="./arquivoJs.js"></script>
 </head>
 <body>
 
@@ -21,15 +22,17 @@
             <!--formulario -->
             <form class="formLogin" action="get"> 
 
-                <input type="text" name="email" id="emailLogin" class="emailLogin" placeholder="E-mail ou número de celular">
+                <p id="erroLogin"></p>
 
-                <button type="button" value="Input Button" class="botaoAvancar" id="botaoAvancar">Avançar</button>
+                <input type="email" name="email" id="emailLogin" class="emailLogin" placeholder="E-mail">
+
+                <button type="button" value="Input Button" class="botaoAvancar" id="botaoAvancar" onclick="validaLogin()" >Avançar</button>
 
                 <div class="loginSeparador">
                     <span class="textSeparador">ou</span>
                 </div>
 
-                <button type="button" value="Input Button" class="botaoCriarConta" id="botaoCriarConta">Criar conta</button>   
+                <a href="https://www.paypal.com/br/webapps/mpp/account-selection"><button type="button" value="Input Button" class="botaoCriarConta" id="botaoCriarConta"> Criar conta</button></a>
             
             </form>
             
