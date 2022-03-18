@@ -153,3 +153,22 @@ a:link {
 a:visited {
     color: #6c7378;
 }
+
+
+@media only screen and (max-width: 670px) {
+    .pai {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filho1 {
+        width: 26em;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+    }
+}
