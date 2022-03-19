@@ -16,14 +16,14 @@ body {
     text-align: center;
     align-content: center;
     width: 100vw;
-    height: 97vh;
+    height: 90vh;
 }
 
 .logo {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     width: 100vw;
-    height: 7vh;
+    height: 5vh;
     background-color: #2462c5;
 }
 
