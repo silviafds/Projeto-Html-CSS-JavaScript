@@ -11,6 +11,13 @@
 
 ### Modelo:
 
-<img src="./modelo/login.png" width="720px" />
+<style>
+    img {
+        border: 1px solid grey;
+    }
+</style>
 
-<img src="./modelo/senha.png" width="720px" />
+<img class="imagem" src="./modelo/login.png" width="720px"/>
+
+<img class="imagem" src="./modelo/senha.png" width="720px"/>
+
