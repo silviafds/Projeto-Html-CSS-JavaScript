@@ -11,13 +11,11 @@
 
 ### Modelo:
 
-<style>
-    img {
-        border: 1px solid grey;
-    }
-</style>
+#### Tela de Login com e-mail
 
-<img class="imagem" src="./modelo/login.png" width="720px"/>
+<img class="imagem" src="./modelo/login.png" width="731px"/>
 
-<img class="imagem" src="./modelo/senha.png" width="720px"/>
+#### Tela de Login da senha
+
+<img class="imagem" src="./modelo/senha.png" width="688px"/>
 
