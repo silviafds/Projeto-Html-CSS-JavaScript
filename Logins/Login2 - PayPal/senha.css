@@ -1,0 +1,190 @@
+body {
+    margin: 0px;
+}
+
+/*
+width: 100vw & height: 97vh; --> o container fica com dimensão
+100% de largura e altura da página. 
+*/
+.pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 97vh;
+    background-color: white;
+}
+
+/* div que guarda a imagem e o formulario*/
+.filho1 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border: 0.8px solid rgb(224, 214, 214);
+}
+
+/*imagem logo da empresa*/
+.imgLogin {   
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+    margin-bottom: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailEscolhido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black 2px solid;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+    margin-bottom: 0em;
+}
+
+#emailVisual {
+    color: rgb(2, 2, 2);
+}
+
+/*inicio do formulario*/
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#erroLogin {
+    color: red;
+}
+
+.SenhaLogin {
+    padding: 9px;
+    width: 23em;
+    height: 2.5em;
+    border: 1px solid rgb(170, 166, 166);
+    margin-bottom: 2em;
+}
+
+.SenhaLogin::placeholder {
+    font-size: 19px;
+}
+
+.botaoLogin {
+    background: rgb(20, 44, 142);
+    font-size: 19px;
+    padding: 9px;
+    width: 17.3em;
+    height: 2.5em;
+    border-radius: 3em;
+    border: 0.1em solid rgb(20, 44, 142);
+    color: white;
+    transition: 1s;
+    margin-bottom: 26px;
+}
+
+.botaoAvancar:hover {
+    background: #1040C1;
+    border: 0.1em solid #1040C1;
+}
+
+.loginSeparador .textSeparador {
+    background-color: #fff;
+    padding: 0 0.5em;
+    position: relative;
+    color: #6c7378;
+    top: -0.7em;
+}
+
+.botaoCriarConta {
+    background: white;
+    font-size: 19px;
+    padding: 9px;
+    width: 17.3em;
+    height: 2.5em;
+    border-radius: 3em;
+    border: 0.1em solid rgb(20, 44, 142);
+    color: rgb(20, 44, 142);
+    transition: 1s;
+    margin-top: 8px;
+}
+
+.botaoCriarConta:hover {
+    border: 0.2em solid rgb(20, 44, 142);
+}
+/*fim do formulario*/
+
+/*footer*/
+.rodape {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 1px;
+    color: #6c7378;
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.faleConosco {
+    margin-left: 1em;
+}
+
+.privacidade {
+    margin-left: 1em;
+}
+
+.termosUso {
+    margin-left: 1em;
+}
+
+.Mundialmente {
+    margin-left: 1em;
+}
+
+
+/*links footer*/
+
+/*primeira cor*/
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: #6c7378;
+}
+ 
+a:visited {
+    color: #6c7378;
+}
+
+@media only screen and (max-width: 670px) {
+    .pai {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filho1 {
+        width: 26em;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

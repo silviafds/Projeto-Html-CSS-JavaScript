@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesse a sua conta</title>
+    <link rel="stylesheet" href="senha.css">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <script src="./arquivoJs.js"></script>
+</head>
+<body onload="VisualizarEmailEscolhido()">
+    <div class="pai"> <!-- div principal-->
+
+        <div class="filho1"> <!-- guarda imagem e formulário-->
+
+            <div class="imgLogin"> <!-- imagem de login-->
+                <img class="imgPayPal" src="./favicon/favicon_io/favicon-32x32.png" alt="imagemLogo">
+            </div>
+
+            <!--<div class="emailEscolhido">
+                <p id="emailVisual"></p>
+            </div>-->
+
+            <!--formulario -->
+            <form class="formLogin" action="get"> 
+
+                <p id="erroSenha"></p>
+                
+                <input type="password" name="senha" id="SenhaLogin" class="SenhaLogin" placeholder="Senha">
+
+                <button type="button" value="Input Button" class="botaoLogin" id="botaoLogin">Log in</button>
+
+                <div class="loginSeparador">
+                    <span class="textSeparador">ou</span>
+                </div>
+
+                <a href="https://www.paypal.com/br/webapps/mpp/account-selection"><button type="button" value="Input Button" class="botaoCriarConta" id="botaoCriarConta"> Criar conta</button></a> 
+            
+            </form>
+            
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="faleConosco"><a href="https://www.paypal.com/br/smarthelp/contact-us" target="_blank">Fale Conosco</a></div>
+        <div class="privacidade"><a href="https://www.paypal.com/br/webapps/mpp/ua/privacy-full" target="_blank">Privacidade</a></div>
+        <div class="termosUso"><a href="https://www.paypal.com/br/webapps/mpp/ua/legalhub-full" target="_blank">Termos de Uso</a></div>
+        <div class="Mundialmente"><a href="https://www.paypal.com/br/webapps/mpp/country-worldwide" target="_blank">Mundialmente</a></div>
+    </footer>
+</body>
+</html>
