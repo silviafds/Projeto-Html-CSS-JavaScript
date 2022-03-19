@@ -11,6 +11,7 @@
 
 - Login: páginas de login.
   - Login1-Minimalista: projeto de login com um design voltado ao minimalismo.
+  - Login2 - PayPal: Clone da tela de login (email e senha) do PayPal.
 - Single Page: páginas únicas para as demais áreas.
   - Page1-Confeitaria: projeto de página home voltado para uma confeitaria, fazendo uso do minimalismo.
 - Formulários: alguns exemplos de formulários com JavaScript.
