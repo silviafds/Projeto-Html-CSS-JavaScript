@@ -5,3 +5,74 @@
     --corAmarelo: #FFDF64;
     --corShandow: #877B66;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*.pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}*/
+
+/*icone da página*/
+.icone {
+    padding: 8px;
+    background-color:#E2D686;
+}
+
+.iconeImg {
+    width: 50px;
+    padding-left: 13px;
+}
+
+/*primeria imagem - apresentação*/
+.imagemDeInicio {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 0.9em;;
+}
+
+/*area de oferta cliente*/
+.paraCliente {
+    display: wrap;
+    margin: 8px;
+    border: #E2D686 1px solid;
+    border-radius: 9px;
+}
+
+.paraCliente > h3 {
+    text-align: center;
+}
+
+.iconeClientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.arvoreIcon, .hotelIcon, .lazerIcon, .escritorioIcon {
+    width: 70px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .icone {
+        padding: 5px;
+    }
+
+    .iconeImg {
+        width: 40px;
+        padding-left: 13px;
+    }
+}
+
