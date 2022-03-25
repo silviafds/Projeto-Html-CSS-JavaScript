@@ -53,10 +53,10 @@ body {
 
 .iconeClientes {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    flex-direction: row;
+    /*align-items: stretch;
+    justify-content: space-around;
+    align-content: center;*/
 }
 
 .arvoreIcon, .hotelIcon, .lazerIcon, .escritorioIcon {
