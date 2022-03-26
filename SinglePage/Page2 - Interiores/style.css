@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap');
+
 :root {
     --corChaVerde: #D4E6B5;
     --corOliva: #AFC97E;
@@ -9,6 +11,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 /*.pai {
@@ -51,18 +54,93 @@ body {
     text-align: center;
 }
 
-.iconeClientes {
+.iconesCliente {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    /*align-items: stretch;
     justify-content: space-around;
-    align-content: center;*/
+    margin-bottom: 6px;
 }
 
 .arvoreIcon, .hotelIcon, .lazerIcon, .escritorioIcon {
     width: 70px;
 }
 
+.significadoCliente {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+/*inicio primeiro bloco de grid*/
+
+.gridUM {
+    display: grid;
+    grid-template-columns: 510px 400px;
+    grid-template-rows: 320px 320px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+/*inicio segundo bloco de grid*/
+.gridDOIS {
+    display: grid;
+    grid-template-columns: 506px 404px;
+    grid-template-rows: 305px 305px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 45px;
+}
+
+.palavrasGrid2 {
+    border: var(--corShandow) 1px solid;
+    padding: 25px;
+}
+
+.palavrasGrid2-1 {
+    border: var(--corChaVerde) 1px solid;
+    padding: 25px;
+}
+
+/*inicio casa&minimalismo*/
+.homeEminimalist {
+    display: wrap;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: var(--corFlax) 2px solid;
+}
+
+.homeEminimalist > h1 {
+    text-align: center;
+}
+
+/*inicio grid3*/
+
+.gridTRES {
+    display: grid;
+    grid-template-columns: 506px 404px;
+    grid-template-rows: 305px 305px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 45px;
+}
+
+.palavrasGrid3 {
+    border: var(--corAmarelo) 1px solid;
+    padding: 25px;
+}
 
 
 @media screen and (max-width: 700px) {
@@ -74,5 +152,81 @@ body {
         width: 40px;
         padding-left: 13px;
     }
+
+    .arvoreIcon, .hotelIcon, .lazerIcon, .escritorioIcon {
+        width: 45px;
+    }
+
+    /*grid1*/
+    .imgGrid1 {
+        width: 200px;
+    }
+
+    .gridUM {
+        display: grid;
+        grid-template-columns: 210px 200px;
+        grid-template-rows: 140px 140px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    /*grid2*/
+    .imgGrid2 {
+        width: 200px;
+    }
+
+    .gridDOIS {
+        display: grid;
+        grid-template-columns: 210px 200px;
+        grid-template-rows: 140px 140px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .palavrasGrid2 {
+        border: var(--corShandow) 1px solid;
+        border-left: white;
+        margin-left: -5px;
+        padding: 3px 10px 3px 10px;
+        font-size: 10px;
+    }
+    
+    .palavrasGrid2-1 {
+        border: var(--corChaVerde) 1px solid;
+        padding: 3px 1px 3px 1px;
+        text-align: start;
+        font-size: 10px;
+    }
+
+    /*grid 3*/
+    .imgGrid3 {
+        width: 200px;
+    }
+
+    .gridTRES {
+        display: grid;
+        grid-template-columns: 210px 200px;
+        grid-template-rows: 140px 140px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .palavrasGrid3 {
+        border: var(--corShandow) 1px solid;
+        padding: 3px;
+        font-size: 10px;
+    }
+   
 }
 
