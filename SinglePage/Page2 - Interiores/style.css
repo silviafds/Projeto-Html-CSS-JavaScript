@@ -14,14 +14,6 @@ body {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
-/*.pai {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}*/
-
 /*icone da página*/
 .icone {
     padding: 8px;
@@ -138,8 +130,26 @@ body {
 }
 
 .palavrasGrid3 {
-    border: var(--corAmarelo) 1px solid;
+    border: var(--corAmarelo) 1.5px solid;
     padding: 25px;
+}
+
+/*carrosel de imagens*/
+
+.CarroselImagensMinimalista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 25px 0px;
+    padding: 10px;
+    background-color: var(--corChaVerde);
+}
+
+#id {
+    border: black 1px solid;
 }
 
 /*outros....apresentacao produtos*/
@@ -147,7 +157,7 @@ body {
 .apresentacaoProdutos {
     display: flex;
     flex-direction: column;
-    border: var(--corOliva) 2px solid;
+    border: var(--corShandow) 2px solid;
 }
 
 .apresentacaoProdutos > h3 {
@@ -162,12 +172,62 @@ body {
     align-content: center;
     justify-items: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     margin-top: 45px;
 }
 
 .imgOutros {
-    border: var(--corOliva) 1px solid;
+    border: var(--corShandow) 1.5px solid;
+}
+
+
+/* footer */
+.contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #E2D686;
+    padding: 10px 0px;
+    margin-top: 15px;
+}
+
+.contatos > h2 {
+    margin: 1px;
+}
+
+.contatos > h3 {
+    margin: 2px;
+}
+
+.RedeSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #E2D686;
+    padding-top: 2px;
+}
+
+.instagram {
+    padding-right: 0.15em;
+    padding-bottom: 0.1em;
+}
+
+.facebook {
+    padding-left: 0.50em;
+}
+
+.rodape {
+    background-color: var(--corAmarelo);
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 
@@ -255,6 +315,40 @@ body {
         padding: 3px;
         font-size: 10px;
     }
+
+    /*carrosel imagens*/
+    #id {
+        width: 300px;
+    }
+
+    /*outros*/
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 45px;
+    }
+
+    .imgOutros {
+        width: 240px;
+        margin-bottom: 5px;
+    }
+
+    /*contatos*/
+    .contatos > h2 {
+        margin: 1px;
+        font-size: 20px;
+    }
+    
+    .contatos > h3 {
+        margin: 2px;
+        font-size: 15px;
+    }
+
    
 }
 
