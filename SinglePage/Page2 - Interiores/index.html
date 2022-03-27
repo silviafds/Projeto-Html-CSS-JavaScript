@@ -6,8 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interiores</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function slide1() {
+            document.getElementById("id").src="./images/carrosselImages/minimalismo-1-640px-360px.jpg";
+            setTimeout("slide2()", 2000)
+        }
+
+        function slide2() {
+            document.getElementById("id").src="./images/carrosselImages/minimalismo-2-640px-360px.jpg";
+            setTimeout("slide3()", 2000)
+        }
+
+        function slide3() {
+            document.getElementById("id").src="./images/carrosselImages/minimalismo-3-640px-360px.jpg";
+            setTimeout("slide4()", 2000)
+        }
+
+        function slide4() {
+            document.getElementById("id").src="./images/carrosselImages/minimalismo-4-640px-360px.jpg";
+            setTimeout("slide1()", 2000)
+        }
+
+    </script>
+
 </head>
-<body>
+<body onload="slide1()">
     
     <div class="icone">
         <img class="iconeImg" src="./icone/casa2.png" alt="icone-casa">
@@ -81,6 +104,10 @@
         <img src="./images/grid3/imagemSalaJantar.jpg" alt="sala de jantar" class="imgGrid3">
     </div>
 
+    <div class="CarroselImagensMinimalista">
+        <img id="id">
+    </div>
+    
     <div class="apresentacaoProdutos">
         <h3>Lorem ipsum dolor sit amet.</h3>
         <div class="outros">
@@ -90,7 +117,21 @@
         </div>
     </div>
 
+    <div class="contatos">
+        <h2>Contatos</h2>
+        <h3>(xx) xxxxx-xxxx</h3>
+        <h3>(xx) xxxx-xxxx</h3>
+        <h3>contato@interiores.com</h3>
+    </div>
     
+    <div class="RedeSocial">
+        <a href="#"><img class="instagram" src="./redeSocial/instagram-25px.png" alt="insta"></a> 
+        <a href="#"><img class="facebook" src="./redeSocial/facebook-25px.png" alt="face"></a> 
+    </div>
+
+    <footer class="rodape">
+        <h3>Copyright &copy 2022. Todos os direitos reservados. Interiores.</h3>
+    </footer>
    
 </body>
 </html>
