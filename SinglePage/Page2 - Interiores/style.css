@@ -80,6 +80,10 @@ body {
     margin-top: 35px;
 }
 
+.imgGrid1 {
+    box-shadow: 3px 4px var(--corChaVerde);
+}
+
 /*inicio segundo bloco de grid*/
 .gridDOIS {
     display: grid;
@@ -91,6 +95,10 @@ body {
     align-items: center;
     margin-bottom: 15px;
     margin-top: 45px;
+}
+
+.imgGrid2 {
+    box-shadow: -3px -4px var(--corFlax);
 }
 
 .palavrasGrid2 {
@@ -177,7 +185,8 @@ body {
 }
 
 .imgOutros {
-    border: var(--corShandow) 1.5px solid;
+    border: var(--corShandow) 1px solid;
+    box-shadow: 6px 4px rgb(71, 70, 70);
 }
 
 
