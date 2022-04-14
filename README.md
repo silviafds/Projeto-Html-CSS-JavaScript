@@ -24,4 +24,5 @@
 ## Direitos autorais:
 
 - Imagens utlizadas do site: https://www.pexels.com/pt-br/
-- ícones: https://iconarchive.com/
+- ícones: https://iconarchive.com/ e https://favicon.io/
+
