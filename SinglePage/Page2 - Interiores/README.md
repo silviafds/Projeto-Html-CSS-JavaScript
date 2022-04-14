@@ -31,3 +31,7 @@ Clone o repositório e depois navegue pelo diretório desejado, após isso, exec
 
 ### Seção de amostra de móveis e contatos.
 <img src="./imagesModel/img6.png" width="731px"/>
+
+## Direitos autorais
+
+Ícone utilizado foi criado por pelo Designer Freepik
