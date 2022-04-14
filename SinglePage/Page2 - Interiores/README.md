@@ -15,19 +15,19 @@ Clone o repositório e depois navegue pelo diretório desejado, após isso, exec
 ## Modelo:
 
 ### Seção inicial.
-<img src="./ImagesModel/img1.png" width="731px"/>
+<img src="./imagesModel/img1.png" width="731px"/>
 
 ### Grid de imagens.
-<img src="./ImagesModel/img2.png" width="731px"/>
+<img src="./imagesModel/img2.png" width="731px"/>
 
 ### Grid de imagens part. 2.
-<img src="./ImagesModel/img3.png" width="731px"/>
+<img src="./imagesModel/img3.png" width="731px"/>
 
 ### Seção minimalista com grid de imagens.
-<img src="./ImagesModel/img4.png" width="731px"/>
+<img src="./imagesModel/img4.png" width="731px"/>
 
 ### Slide show com JavaScript e imagens minimalistas.
-<img src="./ImagesModel/img5.png" width="731px"/>
+<img src="./imagesModel/img5.png" width="731px"/>
 
 ### Seção de amostra de móveis e com contatos.
 <img src="./ImagesModel/img6.png" width="731px"/>
