@@ -29,5 +29,5 @@ Clone o repositório e depois navegue pelo diretório desejado, após isso, exec
 ### Slide show com JavaScript e imagens minimalistas.
 <img src="./imagesModel/img5.png" width="731px"/>
 
-### Seção de amostra de móveis e com contatos.
-<img src="./ImagesModel/img6.png" width="731px"/>
+### Seção de amostra de móveis e contatos.
+<img src="./magesModel/img6.png" width="731px"/>
