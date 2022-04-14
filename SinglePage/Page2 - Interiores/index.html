@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interiores</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <script src="./arquivoJs.js"></script>
-
 </head>
 <body onload="slide1()">
-
     
+    <!-- icone da página -->
     <div class="icone">
         <img class="iconeImg" src="./icone/casa2.png" alt="icone-casa">
-
     </div>
 
+    <!-- imagem inicial-->
     <div class="inicio">
         <img class="imagemDeInicio" src="./images/tela_inicioPaleta-450-Editada.jpg" alt="Sala Noite"> 
     </div>
-    
+
+    <!--oferta para cliente-->
     <div class="paraCliente">
         <h3>Para você</h3>
 
@@ -40,36 +40,51 @@
             <p class="paragrafoNatureza">Lazer</p>
             <p class="paragrafoNatureza">Escritório</p>
         </div>
-    </div>
+    </div> 
 
+    <!-- 1º grid imagens-->
     <div class="gridUM">
-        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid1/workP-2-450px-305px.jpg" alt="sala trabalho" class="imgGrid1">
+        <img  src="./images/grid1/workP-2-450px-305px.jpg" alt="sala trabalho" class="imgGrid1">
     
-        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid1/salaP-3-450px-305px.jpg" alt="copa" class="imgGrid1">
+        <img src="./images/grid1/salaP-3-450px-305px.jpg" alt="copa" class="imgGrid1">
     
-        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid1/workP-1-450px-305px.jpg" alt="escritorio" class="imgGrid1">
+        <img src="./images/grid1/workP-1-450px-305px.jpg" alt="escritorio" class="imgGrid1">
     
-        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid1/salaP-1-450px-305px.jpg" alt="sala" class="imgGrid1">
-    </div>
+        <img  src="./images/grid1/salaP-1-450px-305px.jpg" alt="sala" class="imgGrid1">
+    </div> 
 
+    <!-- 2º grid imagens-->
     <div class="gridDOIS">
-        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid2/homeP-1-590px-400px.jpg" alt="trabalho" class="imgGrid2">
-        <div class="palavrasGrid2">
-            <h4>Lorem, ipsum dolor.</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum voluptate voluptatum?</p>
+        <div class="conjunto1">
+
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid2/homeP-1-590px-400px.jpg" alt="trabalho" class="imgGrid2">
+
+            <div class="palavrasGrid2">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eum voluptate voluptatum?</p>
+            </div>
+
         </div>
 
-        <div class="palavrasGrid2-1">
-            <h4>Lorem ipsum dolor sit.</h4>
-            <p class="paragrafoGrid2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid2/homeP-450Ppx-305px.jpg" alt="casa" class="imgGrid2">
-    </div>
+        <div class="conjunto2">
 
+            <div class="palavrasGrid2-1">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <p class="paragrafoGrid2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid2/homeP-450Ppx-305px.jpg" alt="casa" class="imgGrid2-1">
+
+        </div>
+        
+    </div>  
+
+    <!--modulo minimalismo-->
     <div class="homeEminimalist">
         <h1>Casa & Minimalismo</h1>
     </div>
 
+
+    <!--3º grid-->
     <div class="gridTRES">
         <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid3/imagemQuarto.jpg" alt="poltrona"
         class="imgGrid3">
@@ -83,10 +98,12 @@
         <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="./images/grid3/imagemSalaJantar.jpg" alt="sala de jantar" class="imgGrid3">
     </div>
 
+    <!--carrosel imagens-->
     <div class="CarroselImagensMinimalista">
         <img id="id">
     </div>
-    
+
+    <!-- produtos-->
     <div class="apresentacaoProdutos">
         <h3>Lorem ipsum dolor sit amet.</h3>
         <div class="outros">
@@ -95,26 +112,26 @@
             <img src="./images/moveis/poltronaCinza.jpg" alt="poltrona cinza" class="imgOutros">
         </div>
     </div>
-
+    
+    <!--contatos-->
     <div class="contatos">
         <h2>Contatos</h2>
         <h3>(xx) xxxxx-xxxx</h3>
         <h3>(xx) xxxx-xxxx</h3>
         <h3>contato@interiores.com</h3>
     </div>
-    
+
+    <!-- rede social-->
     <div class="RedeSocial">
         <a href="#"><img class="instagram" src="./redeSocial/instagram-25px.png" alt="insta"></a> 
         <a href="#"><img class="facebook" src="./redeSocial/facebook-25px.png" alt="face"></a> 
     </div>
 
+    <!-- rodape-->
     <footer class="rodape">
         <h3>Copyright &copy 2022. Todos os direitos reservados. Interiores.</h3>
     </footer>
-    <div id="tela"></div>
-    <!--<div onload="tamanhoTela()" class="tamanho">
-        
-    </div>-->
-   
+    
+    
 </body>
 </html>

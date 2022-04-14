@@ -14,7 +14,7 @@ body {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
-/*icone da página*/
+/************** icone da página **************/
 .icone {
     padding: 8px;
     background-color:#E2D686;
@@ -23,7 +23,11 @@ body {
 .iconeImg {
     width: 50px;
     padding-left: 13px;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
 }
+
 
 /*primeria imagem - apresentação*/
 .imagemDeInicio {
@@ -34,9 +38,13 @@ body {
     padding-bottom: 0.9em;;
 }
 
+
 /*area de oferta cliente*/
 .paraCliente {
     display: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     margin: 8px;
     border: #E2D686 1px solid;
     border-radius: 9px;
@@ -55,7 +63,7 @@ body {
 }
 
 .arvoreIcon, .hotelIcon, .lazerIcon, .escritorioIcon {
-    width: 70px;
+    width: 60px;
 }
 
 .significadoCliente {
@@ -67,48 +75,60 @@ body {
 }
 
 /*inicio primeiro bloco de grid*/
-
 .gridUM {
     display: grid;
-    grid-template-columns: 510px 400px;
-    grid-template-rows: 320px 320px;
+    grid-template-columns: 556px 444px;
+    grid-template-rows: 350px 350px;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-    margin-bottom: 15px;
-    margin-top: 35px;
-}
-
-.imgGrid1 {
-    box-shadow: 3px 4px var(--corChaVerde);
+    margin: 35px 15px 5px 5px;
+    padding: 20px;
 }
 
 /*inicio segundo bloco de grid*/
 .gridDOIS {
-    display: grid;
-    grid-template-columns: 506px 404px;
-    grid-template-rows: 305px 305px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: center;
-    margin-bottom: 15px;
-    margin-top: 45px;
+}
+
+.conjunto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center; 
+    border: var(--corShandow) solid 1px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.palavrasGrid2, .palavrasGrid2-1 {
+    text-align: center;
+}
+
+.conjunto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center; 
+    border: var(--corAmarelo) solid 1px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 12px;
 }
 
 .imgGrid2 {
-    box-shadow: -3px -4px var(--corFlax);
-}
-
-.palavrasGrid2 {
-    border: var(--corShandow) 1px solid;
-    padding: 25px;
-}
-
-.palavrasGrid2-1 {
-    border: var(--corChaVerde) 1px solid;
-    padding: 25px;
+    width: 450px;
+    border: var(--corOliva) solid 2px;
 }
 
 /*inicio casa&minimalismo*/
@@ -127,8 +147,8 @@ body {
 
 .gridTRES {
     display: grid;
-    grid-template-columns: 506px 404px;
-    grid-template-rows: 305px 305px;
+    grid-template-columns: 556px 444px;
+    grid-template-rows: 350px 350px;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -189,7 +209,6 @@ body {
     box-shadow: 6px 4px rgb(71, 70, 70);
 }
 
-
 /* footer */
 .contatos {
     display: flex;
@@ -240,94 +259,121 @@ body {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 340px) {
+    /***** icone da página ******/
     .icone {
+        width: 97%;
         padding: 5px;
-    }
-
-    .iconeImg {
-        width: 40px;
-        padding-left: 13px;
-    }
-
-    .arvoreIcon, .hotelIcon, .lazerIcon, .escritorioIcon {
-        width: 45px;
-    }
-
-    /*grid1*/
-    .imgGrid1 {
-        width: 200px;
-    }
-
-    .gridUM {
-        display: grid;
-        grid-template-columns: 210px 200px;
-        grid-template-rows: 140px 140px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        margin-bottom: 15px;
-    }
-
-    /*grid2*/
-    .imgGrid2 {
-        width: 200px;
-    }
-
-    .gridDOIS {
-        display: grid;
-        grid-template-columns: 210px 200px;
-        grid-template-rows: 140px 140px;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        margin-bottom: 15px;
-        margin-top: 15px;
-    }
-
-    .palavrasGrid2 {
-        border: var(--corShandow) 1px solid;
-        border-left: white;
-        margin-left: -5px;
-        padding: 3px 10px 3px 10px;
-        font-size: 10px;
+        background-color: var(--corFlax);
     }
     
-    .palavrasGrid2-1 {
-        border: var(--corChaVerde) 1px solid;
-        padding: 3px 1px 3px 1px;
-        text-align: start;
-        font-size: 10px;
+    .iconeImg {
+        width: 35px;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
     }
 
-    /*grid 3*/
-    .imgGrid3 {
-        width: 200px;
+    /*ofrtas para cliente*/
+    .paraCliente {
+        margin: 5px;
     }
 
-    .gridTRES {
-        display: grid;
-        grid-template-columns: 210px 200px;
-        grid-template-rows: 140px 140px;
+    .arvoreIcon, .hotelIcon, .lazerIcon, 
+    .escritorioIcon {
+        width: 38px;
+    }
+    
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-content: center;
         justify-items: center;
         align-items: center;
-        margin-bottom: 15px;
-        margin-top: 15px;
+    }
+
+    .imgGrid1 {
+        width: 295px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+    }
+
+    .palavrasGrid2, .palavrasGrid2-1 {
+        text-align: center;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+    }
+
+    .imgGrid2 {
+        width: 265px;
+        border: var(--corOliva) solid 2px;
+    }
+
+    .imgGrid2-1 {
+        width: 255px;
+        border: var(--corOliva) solid 2px;
+    }
+
+    /*inicio grid3*/
+
+    .gridTRES {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
     }
 
     .palavrasGrid3 {
-        border: var(--corShandow) 1px solid;
-        padding: 3px;
-        font-size: 10px;
+        border: var(--corAmarelo) 1.5px solid;
+        border-radius: 65px;
+        padding: 18px;
+    }
+
+    .imgGrid3 {
+        width: 295px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
     }
 
     /*carrosel imagens*/
     #id {
-        width: 300px;
+        width: 315px;
     }
 
     /*outros*/
@@ -339,12 +385,12 @@ body {
         justify-items: center;
         align-items: center;
         margin-bottom: 15px;
-        margin-top: 45px;
+        margin-top: 35px;
     }
 
     .imgOutros {
         width: 240px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     /*contatos*/
@@ -358,6 +404,1750 @@ body {
         font-size: 15px;
     }
 
+    .rodape {
+        padding-bottom: 5px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 370px) {
+    /*icone da pagina*/
+    .icone {
+        width: 151.5%;
+        padding: 8px;
+    }
+
+    .iconeImg {
+        width: 35px;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 155.6%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+    
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 150%;
+    }
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 140%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .imgGrid1 {
+        width: 315px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 140%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 30px;
+    }
+
+    .palavrasGrid2, .palavrasGrid2-1 {
+        text-align: center;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 30px;
+    }
+
+    .imgGrid2 {
+        width: 255px;
+        border: var(--corOliva) solid 2px;
+    }
+
+    .imgGrid2-1 {
+        width: 255px;
+        border: var(--corOliva) solid 2px;
+    }
+
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 150%;
+        margin-left: 10px;
+    }
+
+    /*inicio grid3*/
+
+    .gridTRES {
+        width: 140%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .palavrasGrid3 {
+        border: var(--corAmarelo) 1.5px solid;
+        border-radius: 65px;
+        padding: 18px;
+    }
+
+    .imgGrid3 {
+        width: 320px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 150%;
+    }
+
+    #id {
+        width: 330px;
+        height: auto;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 140%;
+        margin-left: 30px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 280px;
+        margin-bottom: 10px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 155%;
+    }
+
+    .contatos > h2 {
+        margin: 1px;
+        font-size: 20px;
+    }
+    
+    .contatos > h3 {
+        margin: 2px;
+        font-size: 15px;
+    }
+
+    .rodape {
+        padding-bottom: 5px;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 420px) {
+    /*icone da pagina*/
+    .icone {
+        width: 175%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 178.2%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 170%;
+        margin-left: 15px;
+    }
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 160%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .imgGrid1 {
+        width: 470px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 170%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 30px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 170%;
+        margin-left: 10px;
+    }
+
+    /*inicio grid3*/
+
+    .gridTRES {
+        width: 160%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .imgGrid3 {
+        width: 380px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 170%;
+        margin-left: 8px;
+    }
+
+    #id {
+        width: 360px;
+        height: 250px;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 160%;
+        margin-left: 40px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 280px;
+        margin-bottom: 10px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 178.8%;
+    }
+
+}
+
+@media screen and (min-width: 430px) and (max-width: 480px) {
+    /*icone da pagina*/
+    .icone {
+        width: 136.5%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 140%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 133%;
+        margin-left: 15px;
+    }
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 128%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .imgGrid1 {
+        width: 510px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 128%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 30px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 20px;
+    }
+
+    /*titulo minimalismo*/
+   .homeEminimalist {
+        width: 135%;
+        margin-left: 10px;
+    }
+
+    /*inicio grid3*/
+
+    .gridTRES {
+        width: 125%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .imgGrid3 {
+        width: 420px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 135%;
+    }
+
+    #id {
+        width: 450px;
+        height: 250px;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 120%;
+        margin-left: 40px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 330px;
+        margin-bottom: 10px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 140.5%;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+    /*icone da pagina*/
+    .icone {
+        width: 127%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 130%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 120%;
+        margin-left: 25px;
+    }
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        display: grid;
+        grid-template-columns: 476px 160px;
+        grid-template-rows: 215px 215px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 20px;
+    }
+
+    .imgGrid1 {
+        width: 300px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 125%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 30px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 125%;
+        margin-left: 10px;
+    }
+
+    /*inicio grid3*/
+
+    .gridTRES {
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .imgGrid3 {
+        width: 380px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
+    }
+
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 122%;
+        margin-left: 8px;
+    }
+
+    #id {
+        width: 390px;
+        height: 250px;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 110%;
+        margin-left: 50px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 130%;
+    }
+
+
+}
+
+@media screen and (min-width: 560px) and (max-width: 600px) {
+    /*icone da pagina*/
+    .icone {
+        width: 100%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 102.6%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 90%;
+        margin-left: 35px;
+    }
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .imgGrid1 {
+        width: 500px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 25px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+
+   /*titulo minimalismo*/
+   .homeEminimalist {
+        width: 90%;
+        margin-left: 30px;
+    }
+    
+    /*inicio grid3*/
+
+    .gridTRES {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .imgGrid3 {
+        width: 380px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 90%;
+        margin-left: 8px;
+    }
+
+    #id {
+        width: 360px;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 100%;
+    }
+
+    .contatos > h2 {
+        font-size: 25px;
+    }
+
+    .contatos > h3 {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width: 620px) and (max-width: 700px) {
+
+    /*icone da pagina*/
+    .icone {
+        width: 131%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 133.2%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 120%;
+        margin-left: 45px;
+    }
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 45px;
+    }
+
+    .imgGrid1 {
+        width: 680px;
+        border: #FFDF64 solid 2px;
+    }
+
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 85px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        border: var(--corShandow) solid 2px;
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 70px;
+    }
+
+    .imgGrid2 {
+        width: 650px;
+    }
+
+    .imgGrid2-1 {
+        width: 550px;
+    }
+
+    .palavrasGrid2 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2 > p {
+        font-size: 20px;
+    }
+
+    .palavrasGrid2-1 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2-1 > p {
+        font-size: 20px;
+    }
+
+    /*titulo minimalismo*/
+   .homeEminimalist {
+        width: 110%;
+        margin-left: 70px;
+    }
+
+    /*inicio grid3*/
+
+    .gridTRES {
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .imgGrid3 {
+        width: 500px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
+    }
+
+    .palavrasGrid3 {
+        width: 50%;
+    }
+
+    .palavrasGrid3 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid3 > p {
+        font-size: 20px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 125%;
+        margin-left: 16px;
+    }
+
+    #id {
+        width: 500px;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 120%;
+        margin-left: 45px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .apresentacaoProdutos > h3 {
+        font-size: 22px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 133%;
+    }
+
+    .contatos > h2 {
+        font-size: 25px;
+    }
+
+    .contatos > h3 {
+        font-size: 15px;
+    }
    
 }
 
+@media screen and (min-width: 720px) and (max-width: 800px) {
+    /*icone da pagina*/
+    .icone {
+        width: 110%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 112%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 100%;
+        margin-left: 45px;
+    }
+
+   /*inicio primeiro bloco de grid*/
+   .gridUM {
+        width: 110%;
+        display: grid;
+        grid-template-columns: 346px 380px;
+        grid-template-rows: 215px 215px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 5px;
+    }
+
+    .imgGrid1 {
+        width: 360px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 85px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 80px;
+    }
+
+    .imgGrid2 {
+        width: 650px;
+    }
+
+    .imgGrid2-1 {
+        width: 550px;
+    }
+
+    .palavrasGrid2 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2 > p {
+        font-size: 20px;
+    }
+
+    .palavrasGrid2-1 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2-1 > p {
+        font-size: 20px;
+    }
+
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 100%;
+        margin-left: 40px;
+    }
+
+    /*inicio grid3*/
+
+    .gridTRES {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .imgGrid3 {
+        width: 500px;
+        border: var(--corShandow) solid 2px;
+        margin: 10px;
+    }
+
+    .palavrasGrid3 {
+        width: 50%;
+    }
+
+    .palavrasGrid3 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid3 > p {
+        font-size: 20px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 105%;
+        margin-left: 16px;
+    }
+
+    #id {
+        width: 500px;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 90%;
+        margin-left: 80px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .apresentacaoProdutos > h3 {
+        font-size: 22px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 112%;
+    }
+
+    .contatos > h2 {
+        font-size: 25px;
+    }
+
+    .contatos > h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 820px) and (max-width: 900px) {
+    /*icone da pagina*/
+    .icone {
+        width: 109.4%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 111.3%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 100%;
+        margin-left: 45px;
+    }
+
+   /*inicio primeiro bloco de grid*/
+   .gridUM {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 546px 230px;
+        grid-template-rows: 270px 270px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 5px;
+    }
+
+    .imgGrid1 {
+        width: 380px;
+        border: #FFDF64 solid 2px;
+    }
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 85px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 80px;
+    }
+
+    .imgGrid2 {
+        width: 650px;
+    }
+
+    .imgGrid2-1 {
+        width: 550px;
+    }
+
+    .palavrasGrid2 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2 > p {
+        font-size: 20px;
+    }
+
+    .palavrasGrid2-1 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2-1 > p {
+        font-size: 20px;
+    }
+
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 100%;
+        margin-left: 40px;
+    }                                                         
+    .gridTRES {
+        width: 110%;
+        display: grid;
+        grid-template-columns: 460px 380px;
+        grid-template-rows: 290px 290px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 2px;   
+    }
+
+    .imgGrid3 {
+        width: 400px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 105%;
+        margin-left: 16px;
+    }
+
+    #id {
+        width: 500px;
+    }
+
+    /*outros*/
+
+    .apresentacaoProdutos {
+        width: 90%;
+        margin-left: 80px;
+    }
+
+    .outros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-top: 35px;
+    }
+
+    .imgOutros {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .apresentacaoProdutos > h3 {
+        font-size: 22px;
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 111.3%;
+    }
+
+    .contatos > h2 {
+        font-size: 25px;
+    }
+
+    .contatos > h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width: 920px) and (max-width: 1000px) {
+    /*icone da pagina*/
+    .icone {
+        width: 109.4%;
+        padding: 8px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 111%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 546px 230px;
+        grid-template-rows: 270px 270px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 5px;
+    }
+
+    .imgGrid1 {
+        width: 380px;
+        border: #FFDF64 solid 2px;
+    }                                       
+
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 85px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 80px;
+    }
+
+    .imgGrid2 {
+        width: 650px;
+    }
+
+    .imgGrid2-1 {
+        width: 550px;
+    }
+
+    .palavrasGrid2 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2 > p {
+        font-size: 20px;
+    }
+
+    .palavrasGrid2-1 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2-1 > p {
+        font-size: 20px;
+    }
+    
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    /*grid3 */
+    .gridTRES {
+        width: 110%;
+        display: grid;
+        grid-template-columns: 460px 380px;
+        grid-template-rows: 290px 290px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 2px;   
+    }
+
+    .imgGrid3 {
+        width: 400px;
+    }
+
+    /*carrosel img*/
+
+    .CarroselImagensMinimalista {
+        width: 105%;
+        margin-left: 16px;
+    }
+
+    #id {
+        width: 500px;
+        height: auto;
+    }
+
+    /*outros... apresentação produtos*/
+    .apresentacaoProdutos {
+        display: flex;
+        flex-direction: column;
+        border: var(--corShandow) 2px solid;
+        margin-left: 45px;
+        width: 100%;
+    }
+    
+    .apresentacaoProdutos > h3 {
+        text-align: center;
+    }
+    
+    .outros {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 305px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 35px;
+        margin-top: 45px;
+    }
+    
+    .imgOutros {
+        border: var(--corShandow) 1px solid;
+        box-shadow: 6px 4px rgb(71, 70, 70);
+    }
+
+    /*contatos*/
+
+    .contatos, .rodape, .RedeSocial {
+        width: 111%;
+    }
+
+    .contatos > h2 {
+        font-size: 30px;
+    }
+
+    .contatos > h3 {
+        font-size: 19px;
+    }
+
+    .rodape {
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (width: 1024px) {
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 546px 320px;
+        grid-template-rows: 290px 290px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 5px;
+    }
+
+    .imgGrid1 {
+        width: 420px;
+        border: #FFDF64 solid 2px;
+    }                
+    
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 35px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 40px;
+    }
+
+    .imgGrid2 {
+        width: 650px;
+    }
+
+    .imgGrid2-1 {
+        width: 550px;
+    }
+
+    .palavrasGrid2 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2 > p {
+        font-size: 20px;
+    }
+
+    .palavrasGrid2-1 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2-1 > p {
+        font-size: 20px;
+    }
+    
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 95%;
+        margin-left: 30px;
+    }
+
+    /*grid3 */
+    .gridTRES {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 460px 380px;
+        grid-template-rows: 290px 290px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 2px;   
+    }
+
+    .imgGrid3 {
+        width: 400px;
+    }
+
+}
+
+@media screen and (width: 1440px) {
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 596px 460px;
+        grid-template-rows: 370px 370px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 5px;
+    }
+
+    .imgGrid1 {
+        width: 520px;
+        border: #FFDF64 solid 2px;
+    }       
+    
+        
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 35px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 40px;
+    }
+
+    .imgGrid2 {
+        width: 750px;
+    }
+
+    .imgGrid2-1 {
+        width: 650px;
+    }
+
+    .palavrasGrid2 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2 > p {
+        font-size: 20px;
+    }
+
+    .palavrasGrid2-1 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2-1 > p {
+        font-size: 20px;
+    }
+    
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 95%;
+        margin-left: 30px;
+    }
+
+    /*grid3 */
+    .gridTRES {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 640px 380px;
+        grid-template-rows: 330px 330px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 25px;
+        padding: 2px;   
+    }
+
+    .imgGrid3 {
+        width: 500px;
+    }
+
+    .palavrasGrid3 > h4 {
+        font-size: 22px;
+    }
+
+    .palavrasGrid3 > p {
+        font-size: 18px;
+    }
+}

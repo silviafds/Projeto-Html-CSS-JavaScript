@@ -24,7 +24,7 @@ var windowHeight;
 function tamanhoTela() {
     windowWidth = window.innerWidth;
     windowHeight = window.innerHeight;
-    /*document.querySelector("#tela").innerHTML = window.innerWidth;*/
+    document.querySelector("#tela").innerHTML = window.innerWidth;
 }
 
 function bigImg(x) {
@@ -41,4 +41,3 @@ function normalImg(x) {
     x.style.height = "";
     x.style.width = "";
 }
-
