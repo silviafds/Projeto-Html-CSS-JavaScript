@@ -30,4 +30,4 @@ Clone o repositório e depois navegue pelo diretório desejado, após isso, exec
 <img src="./imagesModel/img5.png" width="731px"/>
 
 ### Seção de amostra de móveis e contatos.
-<img src="./magesModel/img6.png" width="731px"/>
+<img src="./imagesModel/img6.png" width="731px"/>
