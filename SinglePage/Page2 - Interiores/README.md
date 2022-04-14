@@ -34,4 +34,4 @@ Clone o repositório e depois navegue pelo diretório desejado, após isso, exec
 
 ## Direitos autorais
 
-Ícone utilizado foi criado por pelo Designer Freepik
+Ícone utilizado foi criado pelo Designer Freepik
