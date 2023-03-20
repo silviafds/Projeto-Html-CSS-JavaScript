@@ -1,6 +1,5 @@
 function slide1() {
     document.getElementById("id").src="./images/carrosselImages/minimalismo-1-640px-360px.jpg";
-    tamanhoTela();
     setTimeout("slide2()", 2000)
 }
 
