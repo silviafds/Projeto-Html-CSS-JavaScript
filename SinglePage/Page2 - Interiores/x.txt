@@ -1,0 +1,103 @@
+
+    /*inicio primeiro bloco de grid*/
+    .gridUM {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 546px 320px;
+        grid-template-rows: 290px 290px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 5px;
+    }
+
+    .imgGrid1 {
+        width: 420px;
+        border: #FFDF64 solid 2px;
+    }                
+    
+    /*inicio segundo bloco de grid*/
+    .gridDOIS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .conjunto1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 35px;
+    }
+
+    .conjunto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center; 
+        padding-top: 10px;
+        border-radius: 12px;
+        margin-left: 40px;
+    }
+
+    .imgGrid2 {
+        width: 650px;
+    }
+
+    .imgGrid2-1 {
+        width: 550px;
+    }
+
+    .palavrasGrid2 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2 > p {
+        font-size: 20px;
+    }
+
+    .palavrasGrid2-1 > h4 {
+        font-size: 25px;
+    }
+
+    .palavrasGrid2-1 > p {
+        font-size: 20px;
+    }
+    
+    /*titulo minimalismo*/
+    .homeEminimalist {
+        width: 95%;
+        margin-left: 30px;
+    }
+
+    /*grid3 */
+    .gridTRES {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 460px 380px;
+        grid-template-rows: 290px 290px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 35px 15px 5px 5px;
+        padding: 2px;   
+    }
+
+    .imgGrid3 {
+        width: 400px;
+    }

@@ -1029,7 +1029,7 @@ body {
 
 }
 
-@media screen and (min-width: 560px) and (max-width: 600px) {
+@media screen and (min-width: 560px) and (max-width: 619px) {
     /*icone da pagina*/
     .icone {
         width: 100%;
@@ -1064,13 +1064,13 @@ body {
     }
 
     .imgGrid1 {
-        width: 500px;
+        width: 400px;
         border: #FFDF64 solid 2px;
     }
 
     /*inicio segundo bloco de grid*/
     .gridDOIS {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1078,6 +1078,7 @@ body {
         justify-items: center;
         align-items: center;
         margin-top: 30px;
+        margin-left: 20px;
     }
 
     .conjunto1 {
@@ -1136,11 +1137,12 @@ body {
 
     .CarroselImagensMinimalista {
         width: 90%;
-        margin-left: 8px;
+        margin-left: 10px;
     }
 
     #id {
-        width: 360px;
+        width: 450px;
+        margin-left: 10px;
     }
 
     /*outros*/
@@ -1933,6 +1935,44 @@ body {
 }
 
 @media screen and (width: 1024px) {
+    
+
+    .icone {
+        padding: 8px;
+        background-color:#E2D686;
+        width: 1000px;
+    }
+
+    /*primeria imagem - apresentação*/
+    .imagemDeInicio {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: bottom;
+        padding-bottom: 0.9em;
+        width: 1000px;
+    }
+
+    /*area de oferta cliente*/
+    .paraCliente {
+        display: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 8px;
+        border: #E2D686 1px solid;
+        border-radius: 9px;
+        width: 95%;
+    }
+
+    .paraCliente > h3 {
+        text-align: center;
+    }
+
+    .arvoreIcon, .hotelIcon, .lazerIcon, .escritorioIcon {
+        width: 55px;
+    }
+ 
     /*inicio primeiro bloco de grid*/
     .gridUM {
         width: 90%;
@@ -1943,7 +1983,7 @@ body {
         align-content: center;
         justify-items: center;
         align-items: center;
-        margin: 35px 15px 5px 5px;
+        margin: 35px 15px 5px -13px;
         padding: 5px;
     }
 
@@ -1962,6 +2002,7 @@ body {
         justify-items: center;
         align-items: center;
         margin-top: 60px;
+        margin-left: -19px;
     }
 
     .conjunto1 {
@@ -2014,7 +2055,7 @@ body {
     
     /*titulo minimalismo*/
     .homeEminimalist {
-        width: 95%;
+        width: 90%;
         margin-left: 30px;
     }
 
@@ -2036,6 +2077,81 @@ body {
         width: 400px;
     }
 
+    /*carrosel de imagens*/
+
+    .CarroselImagensMinimalista {
+        width: 950px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin: 25px 0px;
+        margin-left: 20px;
+        padding: 8px;
+        background-color: var(--corChaVerde);
+    }
+
+    #id {
+        width: 650px;
+    }
+
+    .apresentacaoProdutos {
+        width: 950px;
+        display: flex;
+        flex-direction: column;
+        border: var(--corShandow) 2px solid;
+        margin-left: 20px;
+    }
+    
+    .outros {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 290px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 35px;
+        margin-top: 45px;
+       
+    }
+
+    /* footer */
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #E2D686;
+        padding: 10px 0px;
+        margin-top: 15px;
+        width: 1000px;
+    }
+
+    .RedeSocial {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #E2D686;
+        padding-top: 2px;
+        width: 1000px;
+    }
+
+    .rodape {
+        background-color: var(--corAmarelo);
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 1000px;
+    }
 }
 
 @media screen and (width: 1440px) {
